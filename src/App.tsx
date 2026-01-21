@@ -1,6 +1,6 @@
 import { Aside } from "@components/Aside";
 import { PageRoutes } from "PageRoutes";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { ThemeProvider } from "./context/ThemeContext";
 import { LanguageProvider } from "./context/LanguageContext";
 
@@ -8,12 +8,12 @@ function App() {
   return (
     <ThemeProvider>
       <LanguageProvider>
-        <BrowserRouter>
+        <HashRouter>
           <div className="page-layout">
             <Aside />
             <PageRoutes />
           </div>
-        </BrowserRouter>
+        </HashRouter>
       </LanguageProvider>
     </ThemeProvider>
   );
