@@ -1,23 +1,54 @@
+import { ExternalLink } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
+
 function Portfolio() {
+  const { t } = useLanguage();
+
+  const projects = [
+    {
+      title: "Vendinhas App",
+      description: t("portfolio.vendinhasDesc"),
+      image: "/vendinhas-app.webp",
+      technologies: ["Node.js", "TypeScript", "React", "NestJS", "PostgreSQL"],
+      link: "https://github.com/rafascerqueira",
+    },
+  ];
+
   return (
     <div className="content-container">
-      <h2 className="subtitle-page">Portfolio</h2>
-      <div className="flex-col">
-
-      <img className="img-content" src="vendinhas.png" alt="vendinhas" />
-      <p className="describe">
-        This project was created to help small sales consultants organize and
-        manage their inventory, create and track sales, and manage customer
-        billing. This will reduce response time and allow customers to check the
-        order they placed with the consultant, so they can track and provide
-        feedback on the sale that was made. There will be a dedicated customer
-        login area and through this (or by email) the information will be
-        available. The first stage of development is the implementation of the
-        backend, developed in Node JS, followed by the frontend which is being
-        developed in React and finally the mobile in React Native. These are the
-        technologies that give a flexibility to develop and the learning curve
-        is minimal, in addition to my taste as a developer.
-      </p>
+      <h2 className="subtitle-page">{t("portfolio.title")}</h2>
+      <div className="portfolio-grid">
+        {projects.map((project) => (
+          <article key={project.title} className="project-card">
+            <div className="project-image-wrapper">
+              <img
+                className="project-image"
+                src={project.image}
+                alt={project.title}
+              />
+            </div>
+            <div className="project-info">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className="project-tech">
+                {project.technologies.map((tech) => (
+                  <span key={tech} className="tech-tag">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                <ExternalLink size={16} />
+                {t("portfolio.viewProject")}
+              </a>
+            </div>
+          </article>
+        ))}
       </div>
     </div>
   );
