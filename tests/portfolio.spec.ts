@@ -267,7 +267,13 @@ for (const theme of ["light", "dark"] as const) {
     await audit(page);
     if (isMobile) {
       await page.getByRole("button", { name: "Abrir menu", exact: true }).click();
-      await expect(page.getByRole("dialog")).toBeVisible();
+      const dialog = page.getByRole("dialog");
+      await expect(dialog).toBeVisible();
+      // Measure contrast after the opening fade reaches its final opacity.
+      await dialog.evaluate(async (element) => {
+        await Promise.all(element.getAnimations({ subtree: true }).map((animation) => animation.finished));
+      });
+      await expect(dialog).toHaveCSS("opacity", "1");
       await audit(page);
     }
   });
