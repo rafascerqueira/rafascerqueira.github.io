@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960" role="img" aria-labelledby="title description">
+<title id="title">Caderno de fechamento demonstrativo — dados fictícios</title>
+<desc id="description">Interface recriada com marca genérica Caderno Demo e regiões fictícias Aurora, Horizonte, Vale e Costa. Pontos e metas de janeiro a agosto de 2025, inteiramente ilustrativos.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#222047}.muted{fill:#69647d}.white{fill:#fff}.side{fill:#cbc1e4}.small{font-size:12px}.label{font-size:12px;font-weight:700;letter-spacing:.6px}.bold{font-weight:700}.line{stroke:#d6d3e1;fill:none}</style>
+<rect width="1440" height="960" fill="#f6f5fa"/>
+<rect width="208" height="960" fill="#190747"/>
+<rect x="20" y="24" width="40" height="40" rx="12" fill="#ff8500"/>
+<text x="40" y="50" text-anchor="middle" class="white bold" font-size="16">CD</text>
+<text x="72" y="49" class="white bold" font-size="19">Caderno</text>
+<text x="72" y="67" class="side" font-size="10" letter-spacing="2">DEMO</text>
+<text x="20" y="132" class="side label" letter-spacing="2">RELATÓRIO MENSAL</text>
+<rect x="18" y="205" width="174" height="44" rx="8" fill="#35205e"/>
+<path d="M23 207q-4 0-4 8v24q0 8 4 8" stroke="#ff8500" stroke-width="3" fill="none"/>
+
+<text x="29" y="181" class="side" font-size="11" >01</text>
+<text x="52" y="181" class="side" font-size="13" >Fechamento</text>
+<text x="29" y="228" class="side" font-size="11" >02</text>
+<text x="52" y="228" class="white" font-size="13" >Metas &amp; pontuação</text>
+<text x="29" y="275" class="side" font-size="11" >03</text>
+<text x="52" y="275" class="side" font-size="13" >Produtividade</text>
+<text x="29" y="322" class="side" font-size="11" >04</text>
+<text x="52" y="322" class="side" font-size="13" >Produtos</text>
+<rect x="18" y="795" width="174" height="135" rx="9" fill="#2c1756" stroke="#49316f"/>
+<text x="33" y="820" class="side" font-size="12" >ORGANIZAÇÃO</text>
+<text x="33" y="837" class="side" font-size="12" >HISTÓRICA</text>
+<text x="33" y="864" class="white bold" font-size="12" >Vigência de 08/2025</text>
+<text x="33" y="889" class="side" font-size="12" >Regiões e valores</text>
+<text x="33" y="908" class="side" font-size="12" >inteiramente fictícios.</text>
+<text x="240" y="29" class="label" font-size="14" >CADERNO DE FECHAMENTO</text>
+<text x="240" y="55" class="bold" font-size="16" >08/2025  ⌄</text>
+<rect x="750" y="20" width="287" height="30" rx="15" fill="#eae5f5"/>
+<text x="893" y="40" class="bold" font-size="12" text-anchor="middle">DEMONSTRAÇÃO · DADOS FICTÍCIOS</text>
+<rect x="1052" y="18" width="122" height="35" rx="7" fill="none" stroke="#d6d3e1"/><rect x="1185" y="18" width="222" height="35" rx="7" fill="#ff8500"/>
+<text x="1113" y="40" class="bold" font-size="12" text-anchor="middle">↓  Baixar CSV</text>
+<text x="1296" y="40" class="white bold" font-size="12" text-anchor="middle">↗  Versão para impressão</text>
+<path d="M240 75H1407" class="line"/>
+<text x="240" y="104" class="label" font-size="12" style="fill:#be6100">EVOLUÇÃO REGIONAL · MESMA ESCALA</text>
+<text x="240" y="143" class="bold" font-size="28" >Como evoluem as regiões comerciais?</text>
+<text x="240" y="171" class="muted" font-size="14" >Comparativo entre regiões fictícias: Aurora, Horizonte, Vale e Costa.</text>
+<path d="M1190 167h22" stroke="#302269" stroke-width="3"/><path d="M1282 167h22" stroke="#69647d" stroke-width="3" stroke-dasharray="5 4"/>
+<text x="1219" y="171" class="muted" font-size="12" >Pontos</text>
+<text x="1311" y="171" class="muted" font-size="12" >Meta Prata</text>
+<path d="M240 194H1407M240 281H1407" class="line"/>
+<text x="254" y="219" class="muted bold" font-size="11" >LIDERANÇA EM AGO</text>
+<text x="254" y="242" class="bold" font-size="14" >AURORA</text>
+<text x="254" y="265" class="muted" font-size="12" >80,0% da Prata</text>
+<path d="M532 194v87" class="line"/>
+<text x="546" y="219" class="muted bold" font-size="11" >MAIOR GANHO DE RITMO</text>
+<text x="546" y="242" class="bold" font-size="14" >SEM AVANÇO</text>
+<text x="546" y="265" class="muted" font-size="12" >4 regiões · nenhuma avançou</text>
+<path d="M824 194v87" class="line"/>
+<text x="838" y="219" class="muted bold" font-size="11" >MAIOR PERDA DE RITMO</text>
+<text x="838" y="242" class="bold" font-size="14" >VALE</text>
+<text x="838" y="265" class="muted" font-size="12" >−25,0 p.p.</text>
+<path d="M1116 194v87" class="line"/>
+<text x="1130" y="219" class="muted bold" font-size="11" >MENOR ATINGIMENTO</text>
+<text x="1130" y="242" class="bold" font-size="14" >COSTA</text>
+<text x="1130" y="265" class="muted" font-size="12" >65,0% · faltam 3,5 mi pts</text>
+<rect x="240" y="298" width="576" height="298" rx="3" fill="#fdfcff" stroke="#d6d3e1"/>
+<text x="256" y="325" class="bold" font-size="14" >AURORA</text>
+<text x="800" y="325" class="bold" font-size="14" text-anchor="end">80,0%</text>
+<text x="256" y="347" class="muted" font-size="12" >9 lojas</text>
+<text x="800" y="347" class="muted" font-size="12" text-anchor="end">−20,0 p.p.</text>
+<text x="256" y="370" class="muted" font-size="12" >7,2 mi pontos · meta 9,0 mi</text>
+<path d="M305 397.0h480" class="line"/>
+<text x="295" y="402.0" class="muted" font-size="13" text-anchor="end">20 mi</text>
+<path d="M305 472.5h480" class="line"/>
+<text x="295" y="477.5" class="muted" font-size="13" text-anchor="end">10 mi</text>
+<path d="M305 548.0h480" class="line"/>
+<text x="295" y="553.0" class="muted" font-size="13" text-anchor="end">0</text>
+<polyline points="305.00,449.85 373.57,472.50 442.14,472.50 510.71,478.54 579.29,481.56 647.86,483.07 716.43,484.58 785.00,480.05" fill="none" stroke="#69647d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 7"/>
+<rect x="301.00" y="445.85" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="369.57" y="468.50" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="438.14" y="468.50" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="506.71" y="474.54" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="575.29" y="477.56" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="643.86" y="479.07" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="712.43" y="480.58" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="781.00" y="476.05" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<polyline points="305.00,478.54 373.57,484.58 442.14,480.05 510.71,490.62 579.29,499.68 647.86,508.74 716.43,484.58 785.00,493.64" fill="none" stroke="#302269" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="305.00" cy="478.54" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="373.57" cy="484.58" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="442.14" cy="480.05" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="510.71" cy="490.62" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="579.29" cy="499.68" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="647.86" cy="508.74" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="716.43" cy="484.58" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="785.00" cy="493.64" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<text x="305.0" y="576" class="muted" font-size="12" text-anchor="middle">Jan</text>
+<text x="373.57142857142856" y="576" class="muted" font-size="12" text-anchor="middle">Fev</text>
+<text x="442.1428571428571" y="576" class="muted" font-size="12" text-anchor="middle">Mar</text>
+<text x="510.7142857142857" y="576" class="muted" font-size="12" text-anchor="middle">Abr</text>
+<text x="579.2857142857142" y="576" class="muted" font-size="12" text-anchor="middle">Mai</text>
+<text x="647.8571428571429" y="576" class="muted" font-size="12" text-anchor="middle">Jun</text>
+<text x="716.4285714285714" y="576" class="muted" font-size="12" text-anchor="middle">Jul</text>
+<text x="785.0" y="576" class="muted" font-size="12" text-anchor="middle">Ago</text>
+<rect x="831" y="298" width="576" height="298" rx="3" fill="#fdfcff" stroke="#d6d3e1"/>
+<text x="847" y="325" class="bold" font-size="14" >HORIZONTE</text>
+<text x="1391" y="325" class="bold" font-size="14" text-anchor="end">75,0%</text>
+<text x="847" y="347" class="muted" font-size="12" >12 lojas</text>
+<text x="1391" y="347" class="muted" font-size="12" text-anchor="end">−17,0 p.p.</text>
+<text x="847" y="370" class="muted" font-size="12" >7,5 mi pontos · meta 10,0 mi</text>
+<path d="M896 397.0h480" class="line"/>
+<text x="886" y="402.0" class="muted" font-size="13" text-anchor="end">20 mi</text>
+<path d="M896 472.5h480" class="line"/>
+<text x="886" y="477.5" class="muted" font-size="13" text-anchor="end">10 mi</text>
+<path d="M896 548.0h480" class="line"/>
+<text x="886" y="553.0" class="muted" font-size="13" text-anchor="end">0</text>
+<polyline points="896.00,434.75 964.57,457.40 1033.14,457.40 1101.71,464.95 1170.29,472.50 1238.86,470.99 1307.43,472.50 1376.00,472.50" fill="none" stroke="#69647d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 7"/>
+<rect x="892.00" y="430.75" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="960.57" y="453.40" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="1029.14" y="453.40" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="1097.71" y="460.95" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="1166.29" y="468.50" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="1234.86" y="466.99" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="1303.43" y="468.50" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="1372.00" y="468.50" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<polyline points="896.00,472.50 964.57,466.46 1033.14,464.95 1101.71,474.01 1170.29,484.58 1238.86,487.60 1307.43,478.54 1376.00,491.38" fill="none" stroke="#302269" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="896.00" cy="472.50" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="964.57" cy="466.46" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="1033.14" cy="464.95" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="1101.71" cy="474.01" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="1170.29" cy="484.58" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="1238.86" cy="487.60" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="1307.43" cy="478.54" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="1376.00" cy="491.38" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<text x="896.0" y="576" class="muted" font-size="12" text-anchor="middle">Jan</text>
+<text x="964.5714285714286" y="576" class="muted" font-size="12" text-anchor="middle">Fev</text>
+<text x="1033.142857142857" y="576" class="muted" font-size="12" text-anchor="middle">Mar</text>
+<text x="1101.7142857142858" y="576" class="muted" font-size="12" text-anchor="middle">Abr</text>
+<text x="1170.2857142857142" y="576" class="muted" font-size="12" text-anchor="middle">Mai</text>
+<text x="1238.857142857143" y="576" class="muted" font-size="12" text-anchor="middle">Jun</text>
+<text x="1307.4285714285716" y="576" class="muted" font-size="12" text-anchor="middle">Jul</text>
+<text x="1376.0" y="576" class="muted" font-size="12" text-anchor="middle">Ago</text>
+<rect x="240" y="610" width="576" height="298" rx="3" fill="#fdfcff" stroke="#d6d3e1"/>
+<text x="256" y="637" class="bold" font-size="14" >VALE</text>
+<text x="800" y="637" class="bold" font-size="14" text-anchor="end">70,0%</text>
+<text x="256" y="659" class="muted" font-size="12" >8 lojas</text>
+<text x="800" y="659" class="muted" font-size="12" text-anchor="end">−25,0 p.p.</text>
+<text x="256" y="682" class="muted" font-size="12" >5,6 mi pontos · meta 8,0 mi</text>
+<path d="M305 709.0h480" class="line"/>
+<text x="295" y="714.0" class="muted" font-size="13" text-anchor="end">20 mi</text>
+<path d="M305 784.5h480" class="line"/>
+<text x="295" y="789.5" class="muted" font-size="13" text-anchor="end">10 mi</text>
+<path d="M305 860.0h480" class="line"/>
+<text x="295" y="865.0" class="muted" font-size="13" text-anchor="end">0</text>
+<polyline points="305.00,784.50 373.57,792.05 442.14,792.05 510.71,793.56 579.29,798.09 647.86,799.60 716.43,799.60 785.00,799.60" fill="none" stroke="#69647d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 7"/>
+<rect x="301.00" y="780.50" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="369.57" y="788.05" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="438.14" y="788.05" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="506.71" y="789.56" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="575.29" y="794.09" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="643.86" y="795.60" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="712.43" y="795.60" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="781.00" y="795.60" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<polyline points="305.00,804.13 373.57,807.15 442.14,802.62 510.71,808.66 579.29,814.70 647.86,826.78 716.43,802.62 785.00,817.72" fill="none" stroke="#302269" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="305.00" cy="804.13" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="373.57" cy="807.15" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="442.14" cy="802.62" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="510.71" cy="808.66" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="579.29" cy="814.70" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="647.86" cy="826.78" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="716.43" cy="802.62" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="785.00" cy="817.72" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<text x="305.0" y="888" class="muted" font-size="12" text-anchor="middle">Jan</text>
+<text x="373.57142857142856" y="888" class="muted" font-size="12" text-anchor="middle">Fev</text>
+<text x="442.1428571428571" y="888" class="muted" font-size="12" text-anchor="middle">Mar</text>
+<text x="510.7142857142857" y="888" class="muted" font-size="12" text-anchor="middle">Abr</text>
+<text x="579.2857142857142" y="888" class="muted" font-size="12" text-anchor="middle">Mai</text>
+<text x="647.8571428571429" y="888" class="muted" font-size="12" text-anchor="middle">Jun</text>
+<text x="716.4285714285714" y="888" class="muted" font-size="12" text-anchor="middle">Jul</text>
+<text x="785.0" y="888" class="muted" font-size="12" text-anchor="middle">Ago</text>
+<rect x="831" y="610" width="576" height="298" rx="3" fill="#fdfcff" stroke="#d6d3e1"/>
+<text x="847" y="637" class="bold" font-size="14" >COSTA</text>
+<text x="1391" y="637" class="bold" font-size="14" text-anchor="end">65,0%</text>
+<text x="847" y="659" class="muted" font-size="12" >14 lojas</text>
+<text x="1391" y="659" class="muted" font-size="12" text-anchor="end">−15,0 p.p.</text>
+<text x="847" y="682" class="muted" font-size="12" >6,5 mi pontos · meta 10,0 mi</text>
+<path d="M896 709.0h480" class="line"/>
+<text x="886" y="714.0" class="muted" font-size="13" text-anchor="end">20 mi</text>
+<path d="M896 784.5h480" class="line"/>
+<text x="886" y="789.5" class="muted" font-size="13" text-anchor="end">10 mi</text>
+<path d="M896 860.0h480" class="line"/>
+<text x="886" y="865.0" class="muted" font-size="13" text-anchor="end">0</text>
+<polyline points="896.00,754.30 964.57,769.40 1033.14,769.40 1101.71,776.95 1170.29,781.48 1238.86,782.99 1307.43,784.50 1376.00,784.50" fill="none" stroke="#69647d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 7"/>
+<rect x="892.00" y="750.30" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="960.57" y="765.40" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="1029.14" y="765.40" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="1097.71" y="772.95" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="1166.29" y="777.48" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="1234.86" y="778.99" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="1303.43" y="780.50" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<rect x="1372.00" y="780.50" width="8" height="8" fill="#fdfcff" stroke="#69647d" stroke-width="3"/>
+<polyline points="896.00,792.05 964.57,786.01 1033.14,787.52 1101.71,795.07 1170.29,801.11 1238.86,807.15 1307.43,799.60 1376.00,810.92" fill="none" stroke="#302269" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="896.00" cy="792.05" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="964.57" cy="786.01" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="1033.14" cy="787.52" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="1101.71" cy="795.07" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="1170.29" cy="801.11" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="1238.86" cy="807.15" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="1307.43" cy="799.60" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<circle cx="1376.00" cy="810.92" r="5" fill="#ff8500" stroke="#302269" stroke-width="3"/>
+<text x="896.0" y="888" class="muted" font-size="12" text-anchor="middle">Jan</text>
+<text x="964.5714285714286" y="888" class="muted" font-size="12" text-anchor="middle">Fev</text>
+<text x="1033.142857142857" y="888" class="muted" font-size="12" text-anchor="middle">Mar</text>
+<text x="1101.7142857142858" y="888" class="muted" font-size="12" text-anchor="middle">Abr</text>
+<text x="1170.2857142857142" y="888" class="muted" font-size="12" text-anchor="middle">Mai</text>
+<text x="1238.857142857143" y="888" class="muted" font-size="12" text-anchor="middle">Jun</text>
+<text x="1307.4285714285716" y="888" class="muted" font-size="12" text-anchor="middle">Jul</text>
+<text x="1376.0" y="888" class="muted" font-size="12" text-anchor="middle">Ago</text>
+<text x="240" y="944" class="muted" font-size="11" >Interface demonstrativa · marca genérica · sem dados operacionais reais</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#101c32"/>
+  <g fill="none" stroke="#345183" opacity=".6"><path d="M800 0v630M900 0v630M1000 0v630M1100 0v630M700 100h500M700 200h500M700 300h500M700 400h500M700 500h500"/><circle cx="1080" cy="80" r="250"/><circle cx="1080" cy="80" r="300"/></g>
+  <rect x="72" y="65" width="65" height="65" rx="14" fill="#203657"/>
+  <text x="86" y="108" fill="#97b8ff" font-family="Arial,sans-serif" font-size="35" font-weight="700">rc.</text>
+  <text x="72" y="206" fill="#a9bedf" font-family="Arial,sans-serif" font-size="19" letter-spacing="4">SOFTWARE ENGINEER</text>
+  <text x="68" y="297" fill="#f0f5ff" font-family="Arial,sans-serif" font-size="74" font-weight="700" letter-spacing="-3">Rafael Cerqueira</text>
+  <text x="72" y="362" fill="#97b8ff" font-family="Arial,sans-serif" font-size="35">Backend, produtos e dados.</text>
+  <path d="M72 451h1056" stroke="#345183"/>
+  <text x="72" y="510" fill="#bacce9" font-family="Arial,sans-serif" font-size="21">Node.js / TypeScript / Business intelligence</text>
+  <text x="72" y="557" fill="#a9bedf" font-family="Arial,sans-serif" font-size="18">rafascerqueira.github.io</text>
+</svg>

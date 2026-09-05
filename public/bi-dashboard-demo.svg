@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title description">
+  <title id="title">Dashboard comercial demonstrativo — dados fictícios</title>
+  <desc id="description">Recriação ilustrativa de uma interface de BI, com identidade genérica BI Demo, usuário de exemplo e indicadores financeiros inteiramente fictícios. Nenhum dado operacional real é utilizado.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1"><stop stop-color="#f5f3ef"/><stop offset="1" stop-color="#eceaf0"/></linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#283348" flood-opacity=".05"/></filter>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#263244} .muted{fill:#566275} .small{font-size:12px} .label{font-size:13px;font-weight:600} .number{font-size:30px;font-weight:700} .card{fill:#f6efdc;stroke:#e7ddc4;stroke-width:1} .control{fill:#fff;stroke:#dcdfe5;stroke-width:1}
+    </style>
+  </defs>
+  <rect width="1280" height="640" fill="url(#background)"/>
+  <rect width="200" height="640" fill="#e9e6df"/>
+  <path d="M200 0v640" stroke="#dcd8d0"/>
+  <rect x="20" y="28" width="52" height="52" rx="13" fill="#245bd6"/>
+  <text x="46" y="62" text-anchor="middle" font-size="27" font-weight="700" style="fill:#fff">BI</text>
+  <text x="83" y="51" font-size="24" font-weight="700">Demo</text>
+  <text x="84" y="71" class="small muted" letter-spacing="1">ANALYTICS</text>
+  <g class="control"><rect x="18" y="103" width="48" height="30" rx="6"/><rect x="76" y="103" width="48" height="30" rx="6"/><rect x="134" y="103" width="48" height="30" rx="6"/></g>
+  <g fill="none" stroke="#657287" stroke-width="1.5"><circle cx="42" cy="118" r="5"/><path d="M42 108v3m0 14v3m-10-10h3m14 0h3M35 111l2 2m10 10 2 2m0-14-2 2m-10 10-2 2"/><rect x="92" y="112" width="16" height="10" rx="1"/><path d="M100 122v3m-5 0h10M160 111a7 7 0 1 0 5 10 8 8 0 0 1-5-10"/></g>
+  <circle cx="33" cy="165" r="16" fill="#245bd6"/>
+  <text x="33" y="170" text-anchor="middle" font-size="11" font-weight="700" style="fill:#fff">DM</text>
+  <text x="58" y="162" font-size="12" font-weight="700">Usuário de exemplo</text>
+  <text x="58" y="178" font-size="10" class="muted" letter-spacing="1">DEMONSTRAÇÃO</text>
+  <g class="control"><rect x="18" y="200" width="77" height="30" rx="5"/><rect x="105" y="200" width="77" height="30" rx="5"/></g>
+  <text x="56" y="219" text-anchor="middle" class="small">Configurações</text><text x="143" y="219" text-anchor="middle" class="small">Sair</text>
+  <rect x="18" y="247" width="164" height="160" rx="7" class="control"/>
+  <text x="31" y="270" class="label">Período</text><path d="M18 282h164" stroke="#e3e5e9"/>
+  <text x="31" y="302" class="small muted">Ano</text><text x="108" y="302" class="small muted">Mês</text>
+  <g class="control"><rect x="29" y="311" width="65" height="32" rx="5"/><rect x="104" y="311" width="65" height="32" rx="5"/><rect x="29" y="357" width="140" height="31" rx="5"/></g>
+  <text x="40" y="332" class="small">2025</text><text x="115" y="332" class="small">Abril</text>
+  <path d="m80 324 3 3 3-3m69 0 3 3 3-3" fill="none" stroke="#566275"/>
+  <text x="99" y="377" text-anchor="middle" class="small">Atualizar dados</text>
+  <rect x="18" y="425" width="164" height="39" rx="6" class="control"/><text x="31" y="449" class="label">Visualizar como</text>
+  <rect x="18" y="475" width="164" height="34" rx="5" class="control"/><text x="31" y="497" class="small">Analista (exemplo)</text>
+  <text x="24" y="599" font-size="11" class="muted">AMBIENTE ILUSTRATIVO</text>
+  <text x="235" y="34" class="small muted">BI Demo / Dashboard de vendas / Abril 2025</text>
+  <text x="235" y="72" font-size="25" font-weight="700">Dashboard de Vendas</text>
+  <text x="235" y="99" font-size="13" class="muted">Visão de desempenho comercial e indicadores</text>
+  <rect x="925" y="48" width="320" height="32" rx="16" fill="#e1eaff" stroke="#b8cbf3"/>
+  <text x="1085" y="69" text-anchor="middle" font-size="12" font-weight="700" style="fill:#214f9f">DEMONSTRAÇÃO · DADOS FICTÍCIOS</text>
+  <rect x="578" y="118" width="344" height="37" rx="7" fill="#fff"/>
+  <rect x="582" y="122" width="174" height="29" rx="5" fill="#278ce5"/>
+  <g fill="#fff"><rect x="594" y="138" width="3" height="6"/><rect x="600" y="134" width="3" height="10"/><rect x="606" y="130" width="3" height="14"/></g>
+  <text x="619" y="141" font-size="12" font-weight="700" style="fill:#fff">Dashboard de Vendas</text>
+  <text x="840" y="141" text-anchor="middle" font-size="12">Dashboard de Pontuação</text>
+  <rect x="235" y="176" width="1010" height="30" rx="5" fill="#fff" stroke="#e1e0dc"/>
+  <path d="m249 190 3 3 5-6" fill="none" stroke="#566275" stroke-width="1.5"/><text x="267" y="195" class="small">Dados de demonstração carregados</text>
+  <rect x="235" y="218" width="1010" height="33" rx="5" fill="#dae9e2"/>
+  <path d="M237 220v29" stroke="#0f9876" stroke-width="3"/><circle cx="250" cy="234" r="3" fill="#0f9876"/>
+  <text x="265" y="239" class="small">128 pagos · 24 em análise · Dados de 30/04/2025 · Atualizado em 01/05/2025 · Valores simulados</text>
+  <g filter="url(#shadow)" class="card"><rect x="235" y="266" width="329" height="144" rx="11"/><rect x="576" y="266" width="329" height="144" rx="11"/><rect x="917" y="266" width="328" height="144" rx="11"/></g>
+  <text x="400" y="298" text-anchor="middle" class="label muted">PAGOS</text>
+  <text x="400" y="341" text-anchor="middle" font-size="38" font-weight="700">R$ 1,20M</text>
+  <text x="400" y="373" text-anchor="middle" class="small muted">R$ 1.200.000,00 · Projeção: R$ 1,35M</text>
+  <text x="740" y="298" text-anchor="middle" class="label muted">% META ATINGIDA</text>
+  <text x="740" y="341" text-anchor="middle" font-size="36" font-weight="700" style="fill:#aa6700">80,0%</text>
+  <text x="740" y="373" text-anchor="middle" class="small muted">Projeção: 90,0% · Meta: R$ 1.500.000,00</text>
+  <text x="1081" y="298" text-anchor="middle" class="label muted">FALTA PARA META</text>
+  <text x="1081" y="341" text-anchor="middle" font-size="30" font-weight="700" style="fill:#c53f36">R$ 300 mil</text>
+  <text x="1081" y="373" text-anchor="middle" class="small muted">20,0% da meta · Valores ilustrativos</text>
+  <g filter="url(#shadow)" class="card"><rect x="235" y="426" width="243" height="151" rx="9"/><rect x="490" y="426" width="243" height="151" rx="9"/><rect x="745" y="426" width="244" height="151" rx="9"/><rect x="1001" y="426" width="244" height="151" rx="9"/></g>
+  <text x="253" y="453" class="label muted">EM ANÁLISE</text><text x="253" y="493" class="number">R$ 180 mil</text>
+  <text x="253" y="522" class="small muted">24 propostas em análise</text><text x="253" y="544" class="small muted">Cenário inteiramente simulado</text>
+  <text x="508" y="453" class="label muted">CANCELADOS</text><text x="508" y="493" class="number">R$ 75 mil</text>
+  <text x="508" y="522" class="small muted">8 propostas canceladas</text><text x="508" y="544" class="small muted">Valores de exemplo</text>
+  <text x="763" y="453" class="label muted">MÉDIA POR CONSULTOR</text><text x="763" y="493" class="number">R$ 100 mil</text>
+  <text x="763" y="522" class="small muted">12 consultores de exemplo</text><text x="763" y="544" class="small muted">Média: R$ 1.200.000,00 / 12</text>
+  <text x="1019" y="453" class="label muted">MÉDIA POR LOJA</text><text x="1019" y="493" class="number">R$ 300 mil</text>
+  <text x="1019" y="522" class="small muted">4 unidades de exemplo</text><text x="1019" y="544" class="small muted">Média: R$ 1.200.000,00 / 4</text>
+  <text x="740" y="614" text-anchor="middle" font-size="13" font-weight="600" class="muted">Interface recriada para portfólio · Marca genérica · Sem dados reais</text>
+</svg>
