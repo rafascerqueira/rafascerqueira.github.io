@@ -5,44 +5,37 @@ type ProjectCoverProps = {
   project: Project;
   sharedTransition?: boolean;
   eager?: boolean;
+  compact?: boolean;
 };
 
-export function ProjectCover({ project, sharedTransition = true, eager = false }: ProjectCoverProps) {
+export function ProjectCover({ project, sharedTransition = true, eager = false, compact = false }: ProjectCoverProps) {
   const { language } = useLanguage();
   const preview = project.preview;
   const content = preview?.copy[language];
   const cover = (
     <div
       className={`project-cover project-cover-${project.cover}`}
-      aria-hidden={preview ? undefined : true}
+      aria-hidden={preview && !compact ? undefined : true}
       style={{
         aspectRatio: preview && eager ? "auto" : "16 / 10",
         viewTransitionName: sharedTransition ? `project-${project.slug}` : undefined,
       }}
     >
       {preview ? (
-        <img className="project-demo-image" src={preview.src} width={preview.width} height={preview.height} alt={content?.alt} loading={eager ? "eager" : "lazy"} decoding="async" />
-      ) : project.cover === "vendinhas" ? (
-        <img
-          className="project-cover-image"
-          src="/vendinhas-app.webp"
-          alt=""
-          loading={eager ? "eager" : "lazy"}
-          decoding="async"
-        />
+        <img className="project-demo-image" src={preview.src} width={preview.width} height={preview.height} alt={compact ? "" : content?.alt} loading={eager ? "eager" : "lazy"} decoding="async" />
       ) : (
         <>
           <span className="project-cover-grid" />
           <span className="project-cover-orbit" />
-          <span className="project-cover-label">MG CRED</span>
-          <span className="project-cover-type">Caderno<span className="project-cover-type-accent">/ MG Cred</span></span>
-          <span className="project-cover-mark">MG</span>
+          <span className="project-cover-label">PRODUÇÃO</span>
+          <span className="project-cover-type">Fechamento<span className="project-cover-type-accent">/ Produção</span></span>
+          <span className="project-cover-mark">FP</span>
         </>
       )}
     </div>
   );
 
-  return preview ? (
+  return preview && !compact ? (
     <figure className="project-preview">
       {cover}
       <figcaption className="project-preview-caption">

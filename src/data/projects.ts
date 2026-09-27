@@ -11,6 +11,7 @@ export type ProjectCopy = {
 export type Project = {
   slug: string;
   owner: "Rafael Cerqueira";
+  company?: string;
   cover: "vendinhas" | "mgcred-bi" | "mgcred-fechamento";
   technologies: readonly string[];
   deployment?: string;
@@ -32,27 +33,44 @@ export const projects: readonly Project[] = [
     owner: "Rafael Cerqueira",
     cover: "vendinhas",
     featured: true,
-    technologies: ["Node.js", "TypeScript", "React", "NestJS", "PostgreSQL"],
+    technologies: ["Node.js", "TypeScript", "NestJS", "Next.js", "PostgreSQL", "Redis"],
+    deployment: "VPS (Nginx + PM2)",
+    preview: {
+      src: "/vendinhas-dashboard-demo.svg",
+      width: 1280,
+      height: 800,
+      copy: {
+        pt: {
+          alt: "Ilustração do Vendinhas com dados fictícios: painel de gestão com receita, pedidos, clientes e produtos, o catálogo público de uma loja no celular e um alerta de estoque baixo.",
+          caption: "Interface ilustrativa — dados fictícios. Painel de gestão e catálogo público.",
+        },
+        en: {
+          alt: "Illustration of Vendinhas with fictional data: a management dashboard with revenue, orders, customers and products, a shop's public catalog on a phone, and a low-stock alert.",
+          caption: "Illustrative interface — fictional data. Management dashboard and public catalog.",
+        },
+      },
+    },
     copy: {
       pt: {
         title: "Vendinhas App",
-        category: "Produto digital · Fullstack",
-        summary: "Gestão de vendas e estoques para autônomos e pequenos negócios.",
-        context: "Criei o Vendinhas App para reunir a gestão de vendas e estoques em uma solução voltada à rotina de autônomos e pequenos negócios.",
-        features: ["Gestão de vendas", "Controle de estoques", "Foco em autônomos e pequenos negócios"],
+        category: "Produto digital · SaaS fullstack",
+        summary: "Plataforma SaaS para autônomos e pequenos negócios organizarem vendas, estoque, clientes e cobranças, com catálogo público para receber pedidos.",
+        context: "Criei o Vendinhas para reunir, em um só lugar, a rotina de vendas de autônomos e pequenos negócios. Cada vendedor tem seus próprios dados isolados e acompanha pedidos, clientes, produtos, estoque e cobranças a partir de um painel de indicadores. Também monta kits, cria promoções e compartilha um catálogo público para os clientes fazerem pedidos. No código, a API em NestJS e Fastify usa PostgreSQL e Redis, com autenticação JWT e senhas protegidas com Argon2; o front-end em Next.js é um PWA instalável, com tema claro e escuro e notificações em tempo real. A imagem é ilustrativa e usa somente dados fictícios.",
+        features: ["Painel com receita, pedidos, clientes e produtos", "Pedidos com acompanhamento de status e cobranças geradas a partir deles", "Controle de estoque com movimentações e alertas de estoque baixo", "Kits, promoções e preços por período", "Catálogo público compartilhável, com carrinho e checkout para os clientes", "PWA instalável, com tema claro e escuro e notificações em tempo real", "Planos de assinatura e painel administrativo com logs de auditoria"],
       },
       en: {
         title: "Vendinhas App",
-        category: "Digital product · Fullstack",
-        summary: "Sales and inventory management for freelancers and small businesses.",
-        context: "I created Vendinhas App to bring sales and inventory management together in a solution for the everyday needs of freelancers and small businesses.",
-        features: ["Sales management", "Inventory management", "Designed for freelancers and small businesses"],
+        category: "Digital product · Full-stack SaaS",
+        summary: "A SaaS platform that helps freelancers and small businesses manage sales, stock, customers and billing, with a public catalog for taking orders.",
+        context: "I created Vendinhas to bring the day-to-day sales routine of freelancers and small businesses into one place. Each seller has their own isolated data and follows orders, customers, products, stock and billing from a metrics dashboard. They can also build bundles, run promotions and share a public catalog where customers place orders. Under the hood, the NestJS and Fastify API uses PostgreSQL and Redis, with JWT authentication and Argon2-hashed passwords; the Next.js front end is an installable PWA with light and dark themes and real-time notifications. The image is illustrative and uses only fictional data.",
+        features: ["Dashboard with revenue, orders, customers and products", "Orders with status tracking and billing generated from them", "Stock control with movements and low-stock alerts", "Bundles, promotions and time-based pricing", "Shareable public catalog with cart and checkout for customers", "Installable PWA with light and dark themes and real-time notifications", "Subscription plans and an admin panel with audit logs"],
       },
     },
   },
   {
     slug: "bi-mgcred",
     owner: "Rafael Cerqueira",
+    company: "MG Cred",
     cover: "mgcred-bi",
     technologies: ["Streamlit"],
     deployment: "Streamlit",
@@ -74,14 +92,14 @@ export const projects: readonly Project[] = [
     },
     copy: {
       pt: {
-        title: "BI MG Cred",
+        title: "Painel de Vendas",
         category: "Dados · Business intelligence",
         summary: "Dashboard de vendas e indicadores comerciais, com acompanhamento de metas, pagamentos e desempenho por período.",
         context: "Desenvolvi este projeto de business intelligence para a MG Cred, disponibilizado no Streamlit. O painel reúne pagamentos, propostas em análise, cancelamentos, metas e médias por consultor e loja. A imagem demonstrativa usa somente valores fictícios e identidade visual genérica.",
         features: ["Acompanhamento de pagamentos, análises e cancelamentos", "Metas, projeções e médias por consultor e loja", "Seleção de período por mês e ano"],
       },
       en: {
-        title: "BI MG Cred",
+        title: "Sales Dashboard",
         category: "Data · Business intelligence",
         summary: "Sales and business performance dashboard, tracking targets, payments and results by reporting period.",
         context: "I developed this business intelligence project for MG Cred, hosted on Streamlit. The dashboard brings together payments, proposals under review, cancellations, targets and averages per consultant and store. The demonstration image uses only fictional values and generic branding.",
@@ -92,6 +110,7 @@ export const projects: readonly Project[] = [
   {
     slug: "caderno-mgcred",
     owner: "Rafael Cerqueira",
+    company: "MG Cred",
     cover: "mgcred-fechamento",
     technologies: [],
     deployment: "Vercel",
@@ -114,14 +133,14 @@ export const projects: readonly Project[] = [
     },
     copy: {
       pt: {
-        title: "Caderno MG Cred",
+        title: "Fechamento de Produção",
         category: "Aplicação web · Fechamento comercial",
         summary: "Produção, metas, produtividade e MIX reunidos em uma visão confiável de cada competência.",
         context: "Aplicação de fechamento comercial da MG Cred, com acesso restrito por login. Reúne produção, metas, produtividade e MIX por competência. A imagem demonstrativa recria a visão de evolução regional, com comparação de pontos e metas na mesma escala, usando somente regiões e valores fictícios e identidade visual genérica.",
         features: ["Fechamento comercial", "Produção, metas, produtividade e MIX por competência", "Acesso restrito por login"],
       },
       en: {
-        title: "Caderno MG Cred",
+        title: "Production Closing",
         category: "Web application · Sales closing",
         summary: "Production, targets, productivity and product mix brought together in a reliable view of each reporting period.",
         context: "MG Cred's sales closing application, with access restricted by login. It brings production, targets, productivity and product mix together for each reporting period. The demonstration image recreates the regional performance view, comparing points and targets on the same scale, using only fictional regions and values with generic branding.",

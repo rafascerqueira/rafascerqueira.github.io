@@ -1,5 +1,6 @@
 import { Database, PanelsTopLeft, Cloud, ChartNoAxesCombined } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
+import { ScrubWords } from "../components/Words";
 
 const copy = {
   pt: {
@@ -33,22 +34,24 @@ export function Skills() {
 
   return (
     <section id="sobre" className="section about-section" aria-labelledby="about-title">
-      <div className="container about-grid">
-        <div className="about-copy" data-reveal>
+      <div className="container">
+        <div className="section-heading" data-reveal>
           <p className="eyebrow"><span className="section-index">03 /</span> {content.eyebrow}</p>
           <h2 id="about-title" className="section-title">{content.title}</h2>
-          <p className="about-intro">{content.intro}</p>
-          <p className="section-description">{content.description}</p>
         </div>
-        <div className="skills-panel" data-reveal>
-          <p className="eyebrow">{content.stack}</p>
-          <div className="skills-grid">
-            {skillCategories.map((category, index) => (
-              <div key={content.categories[index]} className="skill-category">
-                <div className="skill-header"><category.icon size={20} className="skill-icon" aria-hidden="true" /><h3>{content.categories[index]}</h3></div>
-                <ul className="skill-tags">{category.skills.map((skill) => <li key={skill} className="tag">{skill}</li>)}</ul>
-              </div>
-            ))}
+        <p className="about-statement"><ScrubWords text={content.intro} /></p>
+        <div className="about-grid">
+          <p className="section-description about-description" data-reveal>{content.description}</p>
+          <div className="skills-panel" data-reveal>
+            <p className="eyebrow">{content.stack}</p>
+            <div className="skills-grid">
+              {skillCategories.map((category, index) => (
+                <div key={content.categories[index]} className="skill-category">
+                  <div className="skill-header"><category.icon size={20} className="skill-icon" aria-hidden="true" /><h3>{content.categories[index]}</h3></div>
+                  <ul className="skill-tags">{category.skills.map((skill) => <li key={skill} className="tag">{skill}</li>)}</ul>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

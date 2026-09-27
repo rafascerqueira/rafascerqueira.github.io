@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import { ArrowRight, ArrowUpRight, LockKeyhole } from "lucide-react";
 import { Link } from "react-router";
 import { ProjectCover } from "../components/ProjectCover";
@@ -44,7 +45,7 @@ export function Portfolio() {
           {projects.map((project, index) => {
             const text = project.copy[language];
             return (
-              <article key={project.slug} className={`project-card${project.featured ? " project-card-featured" : ""}`} data-reveal>
+              <article key={project.slug} className="project-card" style={{ "--n": index } as CSSProperties}>
                 <ProjectCover project={project} />
                 <div className="project-card-body">
                   <div className="project-card-top">

@@ -46,6 +46,7 @@ export function Aside() {
 
   return (
     <header className="site-header">
+      <span className="scroll-progress" aria-hidden="true" />
       <div className="header-inner container">
         <Link to={home} className="brand" aria-label={english ? "Rafael Cerqueira, home" : "Rafael Cerqueira, início"}>
           <span className="brand-mark" aria-hidden="true">rc<span>.</span></span>
@@ -64,7 +65,7 @@ export function Aside() {
           </button>
         </div>
       </div>
-      <dialog ref={dialog} id="mobile-navigation" className="mobile-dialog" aria-label={english ? "Navigation menu" : "Menu de navegação"} onClose={() => { setOpen(false); menuButton.current?.focus({ preventScroll: true }); }} onKeyDown={(event) => {
+      <dialog ref={dialog} id="mobile-navigation" className="mobile-dialog" data-lenis-prevent aria-label={english ? "Navigation menu" : "Menu de navegação"} onClose={() => { setOpen(false); menuButton.current?.focus({ preventScroll: true }); }} onKeyDown={(event) => {
         if (event.key !== "Tab") return;
         const items = event.currentTarget.querySelectorAll<HTMLElement>("a[href], button:not([disabled])");
         const first = items[0];

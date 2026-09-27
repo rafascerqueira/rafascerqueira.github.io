@@ -49,7 +49,7 @@ export function Contact() {
           <p className="eyebrow"><span className="section-index">04 /</span> {content.eyebrow}</p>
           <h2 id="contact-title" className="section-title">{content.title}</h2>
           <p className="section-description">{content.description}</p>
-          <a className="button button-primary" href={`mailto:${email}`}>{content.email}<ArrowUpRight size={18} aria-hidden="true" /></a>
+          <a className="button button-primary" data-magnetic href={`mailto:${email}`}>{content.email}<ArrowUpRight size={18} aria-hidden="true" /></a>
         </div>
         <div className="contact-details">
           <Mail className="contact-mail-icon" size={28} aria-hidden="true" />

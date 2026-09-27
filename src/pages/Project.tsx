@@ -12,6 +12,7 @@ const copy = {
     highlights: "O que faz parte",
     technologies: "Tecnologias",
     owner: "Desenvolvido por",
+    company: "Caso de sucesso",
     deployment: "Hospedagem",
     restricted: "Acesso restrito",
     visit: "Abrir aplicação",
@@ -28,6 +29,7 @@ const copy = {
     highlights: "What's included",
     technologies: "Technologies",
     owner: "Developed by",
+    company: "Success case",
     deployment: "Hosting",
     restricted: "Restricted access",
     visit: "Open application",
@@ -85,6 +87,7 @@ export default function Project() {
           </div>
           <dl className="project-facts" data-reveal>
             <div><dt>{content.owner}</dt><dd>{project.owner}</dd></div>
+            {project.company && <div><dt>{content.company}</dt><dd>{project.company}</dd></div>}
             {project.technologies.length > 0 && (
               <div><dt>{content.technologies}</dt><dd><ul className="project-tags">{project.technologies.map((technology) => <li className="tag" key={technology}>{technology}</li>)}</ul></dd></div>
             )}

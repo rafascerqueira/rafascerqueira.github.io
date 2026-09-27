@@ -5,6 +5,7 @@ import { useLanguage } from "./context/LanguageContext";
 import { LanguageProvider } from "./context/LanguageProvider";
 import { ThemeProvider } from "./context/ThemeProvider";
 import NavigationEffects from "./main";
+import MotionEffects from "./motion/MotionEffects";
 
 function Site() {
   const { language } = useLanguage();
@@ -20,6 +21,7 @@ function Site() {
         <p className="footer-note">{english ? "Made with React. Hosted on GitHub Pages." : "Feito com React. Publicado no GitHub Pages."}</p>
       </footer>
       <NavigationEffects />
+      <MotionEffects />
     </>
   );
 }

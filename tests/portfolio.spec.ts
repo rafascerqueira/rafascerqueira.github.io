@@ -2,9 +2,9 @@ import AxeBuilder from "@axe-core/playwright";
 import { expect, test as base, type Page } from "@playwright/test";
 
 const projects = [
-  { slug: "vendinhas-app", title: "Vendinhas App" },
-  { slug: "bi-mgcred", title: "BI MG Cred", external: "https://bi-mgcred.streamlit.app/" },
-  { slug: "caderno-mgcred", title: "Caderno MG Cred", external: "https://mgcred-fechamento.vercel.app/login" },
+  { slug: "vendinhas-app", title: "Vendinhas App", titleEn: "Vendinhas App" },
+  { slug: "bi-mgcred", title: "Painel de Vendas", titleEn: "Sales Dashboard", external: "https://bi-mgcred.streamlit.app/" },
+  { slug: "caderno-mgcred", title: "Fechamento de Produção", titleEn: "Production Closing", external: "https://mgcred-fechamento.vercel.app/login" },
 ] as const;
 
 const test = base.extend<{ runtimeErrors: void }>({
@@ -56,7 +56,7 @@ test("home shows exactly three project cards and confirmed external destinations
       await expect(card.getByRole("link", { name: "Conversar sobre o projeto" })).toHaveAttribute("href", "/#contato");
     }
   }
-  await expect(cards.filter({ hasText: "Caderno MG Cred" })).toContainText("Acesso restrito");
+  await expect(cards.filter({ hasText: "Fechamento de Produção" })).toContainText("Acesso restrito");
   await page.getByRole("link", { name: "Explorar projetos", exact: true }).click();
   await expect.poll(() => page.locator("#projetos").evaluate((element) => element.getBoundingClientRect().top)).toBeLessThan(150);
   await expect(page.locator("#projetos")).toBeFocused();
@@ -66,8 +66,8 @@ test("home shows exactly three project cards and confirmed external destinations
 });
 
 for (const demo of [
-  { slug: "bi-mgcred", title: "BI MG Cred", asset: "/bi-dashboard-demo.svg", brand: "BI Demo", example: "Usuário de exemplo", width: 1280 },
-  { slug: "caderno-mgcred", title: "Caderno MG Cred", asset: "/caderno-dashboard-demo.svg", brand: "Caderno Demo", example: "AURORA", width: 1440 },
+  { slug: "bi-mgcred", title: "Painel de Vendas", titleEn: "Sales Dashboard", asset: "/bi-dashboard-demo.svg", brand: "BI Demo", example: "Usuário de exemplo", width: 1280 },
+  { slug: "caderno-mgcred", title: "Fechamento de Produção", titleEn: "Production Closing", asset: "/caderno-dashboard-demo.svg", brand: "Caderno Demo", example: "AURORA", width: 1440 },
 ]) {
 test(`${demo.title} preview contains only a labeled fictional dashboard and is available in both languages`, async ({ page, request }) => {
   const asset = await request.get(demo.asset);
@@ -82,7 +82,7 @@ test(`${demo.title} preview contains only a labeled fictional dashboard and is a
   for (const prefix of ["", "/en"]) {
     const notice = prefix ? "Demonstration — fictional data and generic branding." : "Demonstração — dados fictícios e marca genérica.";
     await page.goto(`${prefix}/`);
-    const card = page.locator("#projetos article").filter({ has: page.getByRole("heading", { name: demo.title, exact: true }) });
+    const card = page.locator("#projetos article").filter({ has: page.getByRole("heading", { name: prefix ? demo.titleEn : demo.title, exact: true }) });
     await card.scrollIntoViewIfNeeded();
     await expect(card.locator("figcaption")).toContainText(notice);
     await expect(card.getByRole("img")).toHaveAttribute("src", demo.asset);
@@ -129,7 +129,7 @@ test("English home and every English project load with the correct language", as
     const response = await page.goto(`/en/projetos/${project.slug}/`);
     expect(response?.status()).toBe(200);
     await expect(page.locator("html")).toHaveAttribute("lang", "en");
-    await expect(page.getByRole("heading", { level: 1 })).toHaveText(project.title);
+    await expect(page.getByRole("heading", { level: 1 })).toHaveText(project.titleEn);
     await expect(page.getByRole("link", { name: "Back to projects", exact: true })).toHaveAttribute("href", "/en/#projetos");
     await page.reload();
     await expect(page.getByRole("heading", { name: "About the project", exact: true })).toBeVisible();
@@ -142,7 +142,7 @@ test("language switching preserves the project, query and section hash", async (
   await page.getByRole("button", { name: "Switch to English", exact: true }).click();
   await expect(page).toHaveURL("/en/projetos/bi-mgcred/?source=portfolio#project-overview-title");
   await expect(page.locator("html")).toHaveAttribute("lang", "en");
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText("BI MG Cred");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Sales Dashboard");
   await page.getByRole("button", { name: "Mudar para português", exact: true }).click();
   await expect(page).toHaveURL("/projetos/bi-mgcred/?source=portfolio#project-overview-title");
   await expect(page.locator("html")).toHaveAttribute("lang", "pt-BR");
@@ -301,12 +301,12 @@ test("raw prerendered HTML contains home and project content with valid JavaScri
       }, html);
       expect(document.lang, path).toBe(prefix ? "en" : "pt-BR");
       if (project) {
-        expect(document.heading, path).toBe(project.title);
+        expect(document.heading, path).toBe(prefix ? project.titleEn : project.title);
         expect(document.mainText, path).toContain(prefix ? "About the project" : "Sobre o projeto");
       } else {
         expect(document.heading, path).toContain(prefix ? "Code with purpose." : "Código com propósito.");
         expect(document.cards, path).toBe(3);
-        for (const item of projects) expect(document.mainText, path).toContain(item.title);
+        for (const item of projects) expect(document.mainText, path).toContain(prefix ? item.titleEn : item.title);
       }
       expect(document.scripts.length, `${path} exposes a JavaScript asset`).toBeGreaterThan(0);
       const assetURL = new URL(document.scripts[0], response.url());
@@ -370,4 +370,45 @@ test("copy email announces success and handles clipboard denial without side eff
   expect(copied).toEqual(["rafascerqueira.dev@gmail.com"]);
   await expect(page.locator("#contato").getByRole("link", { name: "Enviar e-mail", exact: true }))
     .toHaveAttribute("href", "mailto:rafascerqueira.dev@gmail.com");
+});
+
+test("company name stays off the home cards and appears only as a success case on detail pages", async ({ page }) => {
+  for (const [prefix, label] of [["", "Caso de sucesso"], ["/en", "Success case"]] as const) {
+    await page.goto(`${prefix}/`);
+    await expect(page.locator("#projetos")).not.toContainText(/MG\s?Cred/i);
+    for (const slug of ["bi-mgcred", "caderno-mgcred"]) {
+      await page.goto(`${prefix}/projetos/${slug}/`);
+      await expect(page.locator("h1")).not.toContainText(/MG\s?Cred/i);
+      await expect(page).not.toHaveTitle(/MG\s?Cred/i);
+      await expect(page.locator(".project-facts")).toContainText(`${label}MG Cred`);
+    }
+  }
+});
+
+test("Vendinhas shows its illustration on the card, hero and detail page in both languages", async ({ page, request }) => {
+  const asset = await request.get("/vendinhas-dashboard-demo.svg");
+  expect(asset.status()).toBe(200);
+  expect(asset.headers()["content-type"]).toContain("image/svg+xml");
+  expect(await asset.text()).not.toMatch(/<script\b|<foreignObject\b/i);
+  for (const [prefix, notice, alt] of [["", /Interface ilustrativa — dados fictícios/, /dados fictícios/], ["/en", /Illustrative interface — fictional data/, /fictional data/]] as const) {
+    await page.goto(`${prefix}/`);
+    const hero = page.locator(".hero-feature img");
+    await expect(hero).toHaveAttribute("src", "/vendinhas-dashboard-demo.svg");
+    await expect(hero).toHaveAttribute("alt", "");
+    const card = page.locator("#projetos article").first();
+    await card.scrollIntoViewIfNeeded();
+    await expect(card.locator("figcaption")).toContainText(notice);
+    await expect(card.getByRole("img")).toHaveAttribute("alt", alt);
+    await expect.poll(() => card.getByRole("img").evaluate((image: HTMLImageElement) => image.naturalWidth)).toBe(1280);
+    await page.goto(`${prefix}/projetos/vendinhas-app/`);
+    const preview = page.locator(".project-preview");
+    await expect(preview.locator("figcaption")).toContainText(notice);
+    await expect(preview.getByRole("img")).toHaveAttribute("src", "/vendinhas-dashboard-demo.svg");
+    const cropped = await preview.getByRole("img").evaluate((image) => {
+      const bounds = image.getBoundingClientRect();
+      const frame = image.parentElement!.getBoundingClientRect();
+      return Math.max(frame.top - bounds.top, bounds.bottom - frame.bottom, frame.left - bounds.left, bounds.right - frame.right);
+    });
+    expect(cropped, "The complete illustration must remain visible on the detail page").toBeLessThanOrEqual(1);
+  }
 });
