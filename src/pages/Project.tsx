@@ -14,6 +14,7 @@ const copy = {
     owner: "Desenvolvido por",
     company: "Caso de sucesso",
     deployment: "Hospedagem",
+    repositories: "Código-fonte",
     restricted: "Acesso restrito",
     visit: "Abrir aplicação",
     login: "Abrir página de acesso",
@@ -31,6 +32,7 @@ const copy = {
     owner: "Developed by",
     company: "Success case",
     deployment: "Hosting",
+    repositories: "Source code",
     restricted: "Restricted access",
     visit: "Open application",
     login: "Open login page",
@@ -92,6 +94,7 @@ export default function Project() {
               <div><dt>{content.technologies}</dt><dd><ul className="project-tags">{project.technologies.map((technology) => <li className="tag" key={technology}>{technology}</li>)}</ul></dd></div>
             )}
             {project.deployment && <div><dt>{content.deployment}</dt><dd>{project.deployment}</dd></div>}
+            {project.repositories && <div><dt>{content.repositories}</dt><dd><ul className="project-tags">{project.repositories.map((repo) => <li key={repo.url}><a className="text-link" href={repo.url} target="_blank" rel="noopener noreferrer">{repo.label}<ArrowUpRight size={14} aria-hidden="true" /></a></li>)}</ul></dd></div>}
           </dl>
         </div>
       </section>

@@ -14,7 +14,9 @@ const copy = {
   pt: {
     headline: "Código com propósito.",
     accent: "Produtos com impacto.",
-    description: "Sou Rafael Cerqueira. Desenvolvo aplicações com Node.js e TypeScript e conecto engenharia de software e business intelligence para resolver problemas de negócio.",
+    description: "Sou Rafael Cerqueira, desenvolvedor fullstack. Construo APIs e aplicações com Node.js e TypeScript e uso dados e BI para resolver problemas de negócio.",
+    availability: "Aberto a oportunidades CLT ou PJ, no Rio de Janeiro ou remoto.",
+    eyebrow: "Desenvolvedor Fullstack",
     projects: "Explorar projetos",
     contact: "Vamos conversar",
     identity: "Backend, produtos e dados.",
@@ -26,7 +28,9 @@ const copy = {
   en: {
     headline: "Code with purpose.",
     accent: "Products with impact.",
-    description: "I'm Rafael Cerqueira. I build applications with Node.js and TypeScript, connecting software engineering and business intelligence to solve business problems.",
+    description: "I'm Rafael Cerqueira, a fullstack developer. I build APIs and applications with Node.js and TypeScript and use data and BI to solve business problems.",
+    availability: "Open to full-time (CLT) or contractor (PJ) roles, in Rio de Janeiro or remote.",
+    eyebrow: "Fullstack Developer",
     projects: "Explore projects",
     contact: "Let's talk",
     identity: "Backend, products and data.",
@@ -37,7 +41,7 @@ const copy = {
   },
 } as const;
 
-const stack = ["Node.js", "TypeScript", "NestJS", "React", "Next.js", "PostgreSQL", "Docker", "AWS", "Power BI", "SQL"];
+const stack = ["Node.js", "TypeScript", "NestJS", "React", "Next.js", "PostgreSQL", "Python", "Docker", "Power BI", "SQL"];
 
 export function Home() {
   const { language } = useLanguage();
@@ -50,9 +54,10 @@ export function Home() {
       <section id="inicio" className="section hero" aria-labelledby="hero-title">
         <div className="container hero-grid">
           <div className="hero-copy">
-            <p className="eyebrow">Software Engineer</p>
+            <p className="eyebrow">{content.eyebrow}</p>
             <h1 id="hero-title" className="hero-title"><MaskWords text={content.headline} /><br /><span className="hero-accent"><MaskWords text={content.accent} start={content.headline.split(" ").length} /></span></h1>
             <p className="hero-description">{content.description}</p>
+            <p className="hero-availability">{content.availability}</p>
             <div className="hero-actions">
               <Link className="button button-primary" data-magnetic to={`${home}#projetos`}>{content.projects}<ArrowDown size={18} aria-hidden="true" /></Link>
               <Link className="button button-secondary" data-magnetic to={`${home}#contato`}>{content.contact}<ArrowUpRight size={18} aria-hidden="true" /></Link>

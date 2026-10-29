@@ -6,26 +6,26 @@ const copy = {
   pt: {
     eyebrow: "Sobre mim",
     title: "Engenharia com visão de negócio.",
-    intro: "Sou Rafael Cerqueira, desenvolvedor com mais de 5 anos de experiência em software. Meu foco é backend com Node.js e TypeScript, sem perder de vista quem usa o produto.",
-    description: "Também atuo com análise de dados no setor financeiro, conectando SQL, Power BI e contexto de negócio. Entre APIs, interfaces e dados, busco soluções claras e código que possa evoluir.",
+    intro: "Sou Rafael Cerqueira, desenvolvedor fullstack no Rio de Janeiro. Trabalho com web desde 2012 e com Node.js e TypeScript desde 2019.",
+    description: "Há 11 anos na MG Cred, evoluí do backoffice e antifraude para a TI, onde desenvolvo sistemas e dashboards usados da loja ao CEO, com Python, Streamlit, SQL, Next.js e Power BI quando faz sentido. Fora do trabalho, mantenho o Vendinhas App como projeto open source.",
     stack: "Ferramentas de trabalho",
     categories: ["Backend", "Frontend", "Infraestrutura", "Dados & BI"],
   },
   en: {
     eyebrow: "About me",
     title: "Engineering with business perspective.",
-    intro: "I'm Rafael Cerqueira, a developer with over 5 years of experience in software. My focus is backend development with Node.js and TypeScript, while keeping the people using the product in mind.",
-    description: "I also work in financial data analysis, connecting SQL, Power BI and business context. Across APIs, interfaces and data, I look for clear solutions and code that can evolve.",
+    intro: "I'm Rafael Cerqueira, a fullstack developer in Rio de Janeiro. I have worked on the web since 2012 and with Node.js and TypeScript since 2019.",
+    description: "For 11 years at MG Cred I moved from backoffice and anti-fraud into IT, where I build systems and dashboards used from the store to the CEO, with Python, Streamlit, SQL, Next.js and Power BI when it makes sense. Outside work, I maintain Vendinhas App as an open source project.",
     stack: "Tools of the trade",
     categories: ["Backend", "Frontend", "Infrastructure", "Data & BI"],
   },
 } as const;
 
 const skillCategories = [
-  { icon: Database, skills: ["Node.js", "TypeScript", "Express", "Fastify", "NestJS", "REST API", "SOLID"] },
-  { icon: PanelsTopLeft, skills: ["React", "Vue.js", "Next.js", "Vite", "Tailwind CSS", "UI/UX"] },
-  { icon: Cloud, skills: ["Docker", "AWS EC2", "Elastic Beanstalk", "CodePipeline", "VPS", "CI/CD"] },
-  { icon: ChartNoAxesCombined, skills: ["Power BI", "SQL", "PostgreSQL"] },
+  { icon: Database, skills: ["Node.js", "TypeScript", "Express", "Fastify", "NestJS", "Prisma", "REST API", "SOLID", "Jest", "Vitest"] },
+  { icon: PanelsTopLeft, skills: ["React", "Next.js", "Vite", "Tailwind CSS"] },
+  { icon: Cloud, skills: ["Docker", "VPS", "CI/CD"] },
+  { icon: ChartNoAxesCombined, skills: ["Python", "Streamlit", "Power BI", "SQL", "PostgreSQL"] },
 ];
 
 export function Skills() {

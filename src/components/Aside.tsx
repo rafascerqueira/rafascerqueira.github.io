@@ -50,7 +50,7 @@ export function Aside() {
       <div className="header-inner container">
         <Link to={home} className="brand" aria-label={english ? "Rafael Cerqueira, home" : "Rafael Cerqueira, início"}>
           <span className="brand-mark" aria-hidden="true">rc<span>.</span></span>
-          <span className="brand-name">Rafael Cerqueira<span>Software Engineer</span></span>
+          <span className="brand-name">Rafael Cerqueira<span>{english ? "Fullstack Developer" : "Desenvolvedor Fullstack"}</span></span>
         </Link>
         <nav className="desktop-nav" aria-label={english ? "Main navigation" : "Navegação principal"}>{links}</nav>
         <div className="header-controls">

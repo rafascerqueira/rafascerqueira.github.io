@@ -20,9 +20,9 @@ const translations: Record<Language, Record<string, string>> = {
     // Home
     "home.title": "Sobre mim",
     "home.intro": "Olá! Sou",
-    "home.role": "desenvolvedor backend com mais de",
-    "home.experience": "5 anos de experiência",
-    "home.experienceDesc": "em programação e desenvolvimento de software.",
+    "home.role": "desenvolvedor fullstack com foco em",
+    "home.experience": "Node.js e TypeScript",
+    "home.experienceDesc": "e experiência em dados e BI.",
     "home.specialization": "Especializado em",
     "home.and": "e",
     "home.apiDesc": "crio APIs REST robustas utilizando frameworks como Express, Fastify e NestJS, sempre seguindo princípios",
@@ -47,11 +47,11 @@ const translations: Record<Language, Record<string, string>> = {
     "services.backend": "Backend Development",
     "services.backendDesc": "APIs REST robustas com Node.js e TypeScript usando Express, Fastify e NestJS. Código limpo seguindo princípios SOLID para escalabilidade.",
     "services.frontend": "Frontend & Fullstack",
-    "services.frontendDesc": "Interfaces modernas com React.js, Vue.js, Next.js e TailwindCSS. Padronização UI/UX para projetos fullstack completos.",
+    "services.frontendDesc": "Interfaces modernas com React.js, Next.js e TailwindCSS. Padronização UI/UX para projetos fullstack completos.",
     "services.bi": "Business Intelligence",
     "services.biDesc": "Dashboards interativos no Power BI para análise de vendas e suporte a decisões estratégicas no setor financeiro.",
     "services.devops": "DevOps & Infraestrutura",
-    "services.devopsDesc": "Docker para ambientes de teste e produção. Deploys em VPS e AWS (Elastic Beanstalk, Code Pipeline, EC2).",
+    "services.devopsDesc": "Docker para ambientes de teste e produção. Deploys em VPS e noções de AWS.",
 
     // Skills
     "skills.title": "Habilidades",
@@ -86,9 +86,9 @@ const translations: Record<Language, Record<string, string>> = {
     // Home
     "home.title": "About me",
     "home.intro": "Hi! I'm",
-    "home.role": "a backend developer with over",
-    "home.experience": "5 years of experience",
-    "home.experienceDesc": "in programming and software development.",
+    "home.role": "a fullstack developer focused on",
+    "home.experience": "Node.js and TypeScript",
+    "home.experienceDesc": "with experience in data and BI.",
     "home.specialization": "Specialized in",
     "home.and": "and",
     "home.apiDesc": "I create robust REST APIs using frameworks like Express, Fastify, and NestJS, always following",
@@ -113,11 +113,11 @@ const translations: Record<Language, Record<string, string>> = {
     "services.backend": "Backend Development",
     "services.backendDesc": "Robust REST APIs with Node.js and TypeScript using Express, Fastify, and NestJS. Clean code following SOLID principles for scalability.",
     "services.frontend": "Frontend & Fullstack",
-    "services.frontendDesc": "Modern interfaces with React.js, Vue.js, Next.js, and TailwindCSS. UI/UX standardization for complete fullstack projects.",
+    "services.frontendDesc": "Modern interfaces with React.js, Next.js, and TailwindCSS. UI/UX standardization for complete fullstack projects.",
     "services.bi": "Business Intelligence",
     "services.biDesc": "Interactive dashboards in Power BI for sales analysis and strategic decision support in the financial sector.",
     "services.devops": "DevOps & Infrastructure",
-    "services.devopsDesc": "Docker for test and production environments. Deployments on VPS and AWS (Elastic Beanstalk, Code Pipeline, EC2).",
+    "services.devopsDesc": "Docker for test and production environments. Deployments on VPS and basic AWS.",
 
     // Skills
     "skills.title": "Skills",

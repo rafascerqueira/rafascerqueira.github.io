@@ -9,10 +9,10 @@ const copy = {
     description: "Uma base forte em backend, com visão de ponta a ponta sobre aplicações e dados.",
     hint: "Explore as camadas",
     services: [
-      { title: "Backend", description: "APIs REST com Node.js e TypeScript. Express, Fastify e NestJS, com princípios SOLID e atenção à manutenção.", tags: ["Node.js", "TypeScript", "APIs REST"] },
-      { title: "Fullstack", description: "Interfaces com React, Vue e Next.js, conectadas à lógica da aplicação. Cuidado com a experiência e a consistência visual.", tags: ["React", "Vue", "Next.js"] },
-      { title: "Dados & BI", description: "Análise de dados no setor financeiro. SQL e Power BI para dar contexto às vendas e apoiar decisões de negócio.", tags: ["Power BI", "SQL", "PostgreSQL"] },
-      { title: "Infraestrutura", description: "Ambientes com Docker e deploys em AWS e VPS. Integração e entrega contínuas como parte do desenvolvimento.", tags: ["Docker", "AWS", "CI/CD"] },
+      { title: "Backend", description: "APIs REST com Node.js e TypeScript. Express, Fastify e NestJS, com princípios SOLID, testes (Jest, Vitest, Node test runner) e atenção à manutenção.", tags: ["Node.js", "TypeScript", "APIs REST", "Testes"] },
+      { title: "Fullstack", description: "Interfaces com React e Next.js, conectadas à lógica da aplicação. Cuidado com a experiência e a consistência visual.", tags: ["React", "Next.js", "TypeScript"] },
+      { title: "Dados & BI", description: "Painéis e indicadores comerciais para apoiar decisões, da operação da loja à diretoria. Python, Streamlit, SQL e Power BI quando faz sentido.", tags: ["Python", "Streamlit", "Power BI", "SQL"] },
+      { title: "Infraestrutura", description: "Ambientes com Docker e deploys em VPS, com noções de AWS. Integração e entrega contínuas como parte do desenvolvimento.", tags: ["Docker", "VPS", "AWS (básico)", "CI/CD"] },
     ],
   },
   en: {
@@ -21,10 +21,10 @@ const copy = {
     description: "A strong backend foundation, with an end-to-end perspective on applications and data.",
     hint: "Explore the layers",
     services: [
-      { title: "Backend", description: "REST APIs with Node.js and TypeScript. Express, Fastify and NestJS, with SOLID principles and a focus on maintainability.", tags: ["Node.js", "TypeScript", "REST APIs"] },
-      { title: "Fullstack", description: "Interfaces built with React, Vue and Next.js, connected to application logic. Attention to user experience and visual consistency.", tags: ["React", "Vue", "Next.js"] },
-      { title: "Data & BI", description: "Data analysis in the financial sector. SQL and Power BI to give sales context and support business decisions.", tags: ["Power BI", "SQL", "PostgreSQL"] },
-      { title: "Infrastructure", description: "Docker environments and AWS and VPS deployments. Continuous integration and delivery as part of development.", tags: ["Docker", "AWS", "CI/CD"] },
+      { title: "Backend", description: "REST APIs with Node.js and TypeScript. Express, Fastify and NestJS, with SOLID principles, tests (Jest, Vitest, Node test runner) and a focus on maintainability.", tags: ["Node.js", "TypeScript", "REST APIs", "Testing"] },
+      { title: "Fullstack", description: "Interfaces built with React and Next.js, connected to application logic. Attention to user experience and visual consistency.", tags: ["React", "Next.js", "TypeScript"] },
+      { title: "Data & BI", description: "Dashboards and sales indicators that support decisions, from store operations to the board. Python, Streamlit, SQL and Power BI when it makes sense.", tags: ["Python", "Streamlit", "Power BI", "SQL"] },
+      { title: "Infrastructure", description: "Docker environments and VPS deployments, with basic AWS knowledge. Continuous integration and delivery as part of development.", tags: ["Docker", "VPS", "AWS (basic)", "CI/CD"] },
     ],
   },
 } as const;

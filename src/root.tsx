@@ -18,15 +18,15 @@ export function Layout({ children }: { children: ReactNode }) {
   const copy = project?.copy[language];
   const isContent = path === "/" || Boolean(project);
   const canonicalPath = isContent ? `${english ? "/en" : ""}${path === "/" ? "/" : `${path}/`}` : "/";
-  const title = copy ? `${copy.title} — Rafael Cerqueira` : "Rafael Cerqueira — Software Engineer";
-  const description = copy?.summary ?? (english ? "Backend, digital products and business intelligence. Explore projects by Rafael Cerqueira, software engineer in Rio de Janeiro." : "Backend, produtos digitais e business intelligence. Conheça os projetos de Rafael Cerqueira, engenheiro de software no Rio de Janeiro.");
+  const title = copy ? `${copy.title} — Rafael Cerqueira` : english ? "Rafael Cerqueira — Fullstack Developer" : "Rafael Cerqueira — Desenvolvedor Fullstack";
+  const description = copy?.summary ?? (english ? "Fullstack developer in Rio de Janeiro: Node.js, TypeScript, React, Python and data. Explore the projects of Rafael Cerqueira." : "Desenvolvedor fullstack no Rio de Janeiro: Node.js, TypeScript, React, Python e dados. Conheça os projetos de Rafael Cerqueira.");
   const structuredData = {
     "@context": "https://schema.org",
     "@type": project ? "CreativeWork" : "ProfilePage",
     name: copy?.title ?? "Rafael Cerqueira",
     description,
     url: `${origin}${canonicalPath}`,
-    ...(project ? { author: { "@type": "Person", name: "Rafael Cerqueira", url: origin } } : { mainEntity: { "@type": "Person", name: "Rafael Cerqueira", jobTitle: "Software Engineer", url: origin, sameAs: ["https://github.com/rafascerqueira", "https://www.linkedin.com/in/rafascerqueira/"] } }),
+    ...(project ? { author: { "@type": "Person", name: "Rafael Cerqueira", url: origin } } : { mainEntity: { "@type": "Person", name: "Rafael Cerqueira", jobTitle: english ? "Fullstack Developer" : "Desenvolvedor Fullstack", url: origin, sameAs: ["https://github.com/rafascerqueira", "https://www.linkedin.com/in/rafascerqueira/"] } }),
   };
 
   return (
@@ -48,7 +48,7 @@ export function Layout({ children }: { children: ReactNode }) {
         <meta property="og:image" content={`${origin}/social-card.png`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Rafael Cerqueira — Software Engineer" />
+        <meta property="og:image:alt" content={english ? "Rafael Cerqueira — Fullstack Developer" : "Rafael Cerqueira — Desenvolvedor Fullstack"} />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
